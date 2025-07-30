@@ -1,5 +1,5 @@
 function Sec3() {
-    return (<div className="h-auto relative bg-zinc-300 flex flex-col items-center">
+    return (<div className="h-auto relative bg-zinc-200 flex flex-col items-center">
         <div className="flex justify-around items-center w-3/4 my-20">
             <div className="px-8 w-9/10">
                 <div className="bg-zinc-50 flex flex-col justify-center items-center p-15">

@@ -1,17 +1,17 @@
 import Navbar from "./components/Navbar"
-import Sec1 from "./components/portfolio/Sec1"
-import Sec2 from "./components/portfolio/Sec2"
-import Sec3 from "./components/portfolio/Sec3"
+import Form from "./components/contact/Form"
 import Footer from "./components/Footer"
+import Hero from "./components/contact/Hero"
+import Sec1 from "./components/landing/Sec1"
 
 function App() {
 
   return (
     <>
+    
       <Navbar/>
-      <Sec1/>
-      <Sec2/>
-      <Sec3/>
+      <Hero/>
+      <Form/>
       <Footer/>
     </>
   )

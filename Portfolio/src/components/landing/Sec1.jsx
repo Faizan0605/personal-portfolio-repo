@@ -7,7 +7,7 @@ function Sec1() {
         <div className="bg-black h-330 w-full">
 
 
-            <div className='flex item-center justify-center z-1 w-full h-full overflow-hidden '>
+            <div className='flex items-center justify-center z-1 w-full h-full overflow-hidden '>
                 <img src={webImage} alt="Web development" className='w-full h-full object-contain scale-125 relative bottom-34'/>
             </div>
 
