@@ -43,7 +43,7 @@ function Footer() {
                 <div className="">
                     <div>
                         <p className="text-amber-300 text-base font-bold">EMAIL</p>
-                        <p className="text-sm">faizefaizan@gmail.com</p>
+                        <p className="text-sm">faizefaizan0605@gmail.com</p>
                     </div>
                     <div>
                         <p className="text-amber-300 text-base font-bold mt-5">PHONE</p>

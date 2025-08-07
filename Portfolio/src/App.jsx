@@ -1,17 +1,18 @@
 import Navbar from "./components/Navbar"
-import Form from "./components/contact/Form"
+import Landing from "./components/Landing"
 import Footer from "./components/Footer"
-import Hero from "./components/contact/Hero"
-import Sec1 from "./components/landing/Sec1"
+import Portfolio from "./components/Portfolio"
+import Contact from "./components/Contact"
 
 function App() {
 
   return (
     <>
-    
+      
       <Navbar/>
-      <Hero/>
-      <Form/>
+      {/* <Landing/> */}
+      {/* <Portfolio/> */}
+      <Contact/>
       <Footer/>
     </>
   )
