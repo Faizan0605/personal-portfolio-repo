@@ -13,6 +13,7 @@ function Landing() {
         <Sec4/>
         <Sec5/>
         <Sec6/>
+        
         <Form/>
         
     </div> );
