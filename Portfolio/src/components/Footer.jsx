@@ -1,12 +1,12 @@
 function Footer() {
     return (
-        <div className="w-full flex justify-center items-center bg-black" >
+        <footer className="w-full flex justify-center items-center bg-black" >
             <div className="flex justify-between py-4 w-3/4 h-50 text-zinc-200 mt-4 border-t border-b border-amber-300">
-                <div className="">
-                    <p className="text-base font-bold">Web-Dev</p>
+                <div className="hidden md:block">
+                    <p className="text-base font-bold">Web-Dev</p> {/* hidden in phone*/}
                 </div>
-                <div className="">
-                    <p className="text-base font-bold">DATA-SCI</p>
+                <div className=" hidden md:block">
+                    <p className="text-base font-bold">DATA-SCI</p> {/* hidden in phone*/}
                 </div>
 
                 <div className="">
@@ -51,7 +51,7 @@ function Footer() {
                     </div>
                 </div>
             </div>
-        </div>
+        </footer>
     )
 }
 export default Footer;
