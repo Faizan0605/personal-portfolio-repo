@@ -1,7 +1,7 @@
 function Sec3() {
     return (<div className="h-auto relative bg-zinc-200 flex flex-col items-center">
-        <div className="flex justify-around items-center w-3/4 my-20">
-            <div className="px-8 w-9/10">
+        <div className="flex flex-col lg:flex-row lg:justify-between items-center w-3/4 my-20">
+            <div className="lg:mr-8 my-5 lg:my-0  ">
                 <div className="bg-zinc-50 flex flex-col justify-center items-center p-15">
                     <p className="mb-10"> star</p>
                     <p className="text-center">
@@ -9,7 +9,7 @@ function Sec3() {
                     </p>
                 </div>
             </div>
-            <div className="px-8  w-9/10">
+            <div className="lg:ml-8 my-5 lg:my-0 ">
                 <div className="bg-zinc-50 flex flex-col justify-center items-center p-15">
                     <p className="mb-10"> star</p>
                     <p className="text-center">
