@@ -2,7 +2,7 @@ import webImage from "../../assets/webdev-04-2.webp"
 
 function Sec2() {
     return (<>
-        <div className="bg-amber-300 h-350 flex flex-col items-center justify-center">
+        <div className="hidden  bg-amber-300 h-350 lg:flex flex-col items-center justify-center">
             <div className="w-1/2 mt-20 h-full  flex items-start justify-between ">
                 <div className="w-1/2 mx-5 flex flex-col items-end justify-end ">
                     <div className="h-4 w-full bg-black mb-5 relative top-2" ></div>

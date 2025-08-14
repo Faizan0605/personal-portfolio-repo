@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       
-      <Navbar page={page} setPage={setPage} />
+      {/* <Navbar page={page} setPage={setPage} /> */}
       {page === 'home' && <Landing />}
       {page === 'portfolio' && <Portfolio />}
       {page === 'contact' && <Contact />}

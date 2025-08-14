@@ -8,11 +8,11 @@ import Form from "./contact/Form"
 function Landing() {
     return ( <div>
         <Sec1/>
-        <Sec2/>
-        <Sec3/>
+        {/* <Sec2/> */}
+        {/* <Sec3/>
         <Sec4/>
         <Sec5/>
-        <Sec6/>
+        <Sec6/> */}
         
         <Form/>
         

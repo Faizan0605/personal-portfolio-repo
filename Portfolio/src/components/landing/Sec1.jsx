@@ -12,28 +12,39 @@ function Sec1() {
             </div>
 
             <div className='flex flex-col items-center justify-center z-2 relative bottom-290'>
-                <div className='size-270'>
-
-                    <div className=' flex items-center justify-between '>
-                        <div className=' w-260'><img src={webImage1} alt="Web development" /></div>
-                        <div className=' flex flex-col justify-end'>
-                            <div className=''><h1 className='font-extrabold text-7xl font-mono text-amber-300 text-right tracking-tighter'>Web Solutions For Any Sized Project</h1></div>
-                            <div className='flex justify-end'><button className='bg-amber-300 text-xs mr-1 font-bold px-8 py-5 mt-9'>HIRE ME!</button></div>
+                <div className='w-3/4'>
+                    <div className=' flex items-center justify-between w-full'>
+                        <div className=' w-1/2'>
+                            <img src={webImage1} alt="Web development" className='w-8/9' />
+                        </div>
+                        
+                        <div className=' w-1/2 flex flex-col justify-end'>
+                            <div className=''>
+                                <h1 className='font-extrabold text-7xl font-mono text-amber-300 text-right tracking-tighter'>Web Solutions</h1>
+                                <h1 className='font-extrabold text-7xl font-mono text-amber-300 text-right tracking-tighter'>For Any Sized</h1>
+                                <h1 className='font-extrabold text-7xl font-mono text-amber-300 text-right tracking-tighter'>Project</h1>
+                            </div>
+                            <div className='flex justify-end'>
+                                <button className='bg-amber-300 text-xs mr-1 font-bold px-8 py-5 mt-9'>HIRE ME!</button>
+                            </div>
                         </div>
                     </div>
 
-
-                    <div className='flex mt-9 items-center justify-between'>
-                        <div className='ml-22 flex flex-col justify-end w-307'>
-                            <div><p className='text-zinc-200 text-lg font-medium text-right w-100'>Pellentesque adipiscing tristique adipiscing molestie auctor sodales a. Urna in purus, pellentesque ut est felis duis eros. Amet viverra placerat amet rhoncus sed pellentesque penatibus scelerisque diam. Faucibus sapien diam scelerisque turpis enim etiam pulvinar arcu. Varius turpis interdum blandit nisl, purus, nunc, vestibulum morbi.</p></div>
-                            <div className='flex justify-end'><button className='bg-amber-300 text-xs mt-9 mr-25  font-bold px-8 py-5'>HIRE ME!</button></div>
+                    <div className='flex mt-19 items-center justify-between w-full'>
+                        <div className=' flex flex-col justify-end w-1/2'>
+                            <p className='text-zinc-200 text-lg font-medium text-right w-8/9'>Pellentesque adipiscing tristique adipiscing molestie auctor sodales a. Urna in purus, pellentesque ut est felis duis eros. Amet viverra placerat amet rhoncus sed pellentesque penatibus scelerisque diam. Faucibus sapien diam scelerisque turpis enim etiam pulvinar arcu. Varius turpis interdum blandit nisl, purus, nunc, vestibulum morbi.</p>
+                            
+                            <div className='w-8/9 flex justify-end'>
+                                <button className='bg-amber-300 text-xs mt-9   font-bold px-8 py-5'>HIRE ME!</button>
+                            </div>
                         </div>
-                        <div className=' flex justify-end  self-end w-300 mr-1'> <img src={webImage2} alt="Web development" /> </div>
+                        <div className=' flex justify-end  self-end w-1/2'> 
+                            <img src={webImage2} alt="Web development" /> 
+                        </div>
                         
                     </div>
                 </div>
             </div>
-
         </div>
 
     );
