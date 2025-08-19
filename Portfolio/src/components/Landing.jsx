@@ -5,9 +5,9 @@ import Sec4 from "./landing/Sec4"
 import Sec5 from "./landing/Sec5"
 import Sec6 from "./landing/Sec6"
 import Form from "./contact/Form"
-function Landing() {
+function Landing({ page, setPage }) {
     return ( <div>
-        <Sec1/>
+        <Sec1 page={page} setPage={setPage}/>
         <Sec2/>
         <Sec3/>
         <Sec4/>

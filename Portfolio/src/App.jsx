@@ -15,10 +15,10 @@ function App() {
     <>
       
       <Navbar page={page} setPage={setPage} />
-      {page === 'home' && <Landing />}
+      {page === 'home' && <Landing page={page} setPage={setPage}/>}
       {page === 'portfolio' && <Portfolio />}
       {page === 'contact' && <Contact />}
-      {page === 'about' && <About />}
+      {page === 'about' && <About page={page} setPage={setPage}/>}
       <Footer/>
     </>
   )

@@ -2,7 +2,7 @@ import webImage from '../../assets/webdev-03-1.webp';
 import webImage1 from '../../assets/web-developer-30.webp';
 import webImage2 from '../../assets/web-developer-28.webp'
 
-function Sec1() {
+function Sec1({ page, setPage }) {
     return (
         <div className="bg-black h-100 md:h-200 lg:h-330 w-full relative">
 
@@ -25,7 +25,7 @@ function Sec1() {
                                 <h1 className='font-extrabold text-2xl md:text-4xl lg:text-7xl font-mono text-amber-300 text-right tracking-tighter'>Project</h1>
                             </div>
                             <div className='flex justify-end'>
-                                <button className='bg-amber-300 text-xs mr-1 font-bold px-8 py-5 mt-9'>HIRE ME!</button>
+                                <button className='bg-amber-300 text-xs mr-1 font-bold px-8 py-5 mt-9' onClick={() => setPage('contact')}>HIRE ME!</button>
                             </div>
                         </div>
                     </div>
