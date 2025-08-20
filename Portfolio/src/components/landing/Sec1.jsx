@@ -20,9 +20,10 @@ function Sec1({ page, setPage }) {
                         
                         <div className=' md:w-1/2 flex flex-col justify-end'>
                             <div className=''>
-                                <h1 className='font-extrabold text-2xl md:text-4xl lg:text-7xl font-mono text-amber-300 text-right tracking-tighter'>Web Solutions</h1>
-                                <h1 className='font-extrabold text-2xl md:text-4xl lg:text-7xl font-mono text-amber-300 text-right tracking-tighter'>For Any Sized</h1>
-                                <h1 className='font-extrabold text-2xl md:text-4xl lg:text-7xl font-mono text-amber-300 text-right tracking-tighter'>Project</h1>
+                                <p className='md:hidden font-extrabold text-2xl font-mono text-amber-300 text-right tracking-tighter mt-20'>Web Solutions For Any Sized Project</p>
+                                <h1 className='hidden md:block font-extrabold  md:text-4xl lg:text-7xl font-mono text-amber-300 text-right tracking-tighter'>Web Solutions</h1>
+                                <h1 className='hidden md:block font-extrabold  md:text-4xl lg:text-7xl font-mono text-amber-300 text-right tracking-tighter'>For Any Sized</h1>
+                                <h1 className='hidden md:block font-extrabold  md:text-4xl lg:text-7xl font-mono text-amber-300 text-right tracking-tighter'>Project</h1>
                             </div>
                             <div className='flex justify-end'>
                                 <button className='bg-amber-300 text-xs mr-1 font-bold px-8 py-5 mt-9' onClick={() => setPage('contact')}>HIRE ME!</button>
