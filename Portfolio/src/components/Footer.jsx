@@ -2,12 +2,10 @@ function Footer() {
     return (
         <footer className="w-full flex justify-center items-center bg-black" >
             <div className="flex flex-col md:flex-row justify-center  md:justify-between py-4 w-3/4  md:h-50 text-zinc-200 mt-4 border-t border-b border-amber-300">
-                <div className="hidden md:block">
-                    <p className="text-base font-bold">Web-Dev</p> {/* hidden in phone*/}
-                </div>
-                <div className=" hidden md:block">
-                    <p className="text-base font-bold">DATA-SCI</p> {/* hidden in phone*/}
-                </div>
+                {/* <div className="hidden md:block">
+                    <p className="text-base font-bold">Web-Dev</p> 
+                </div> */}
+                
 
                 <div className="">
                     <div>

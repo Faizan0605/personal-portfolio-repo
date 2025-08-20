@@ -1,5 +1,5 @@
     import img from '../../assets1/web-developer-26.webp' 
-    function Sec1() {
+    function Sec1({ page, setPage }) {
         return ( <>
             <div className='relative h-screen flex justify-center bg-black '>
                 <img src={img} alt="Web development" className="w-full h-full object-cover absolute z-1 bottom-30 "></img>
@@ -11,7 +11,7 @@
                     </div>
 
                     <div>
-                        <button className='bg-amber-300 font-bold py-5 px-10 mt-20 lg:mt-0'>START YOUR OWN PROJECT</button>
+                        <button className='bg-amber-300 font-bold py-5 px-10 mt-20 lg:mt-0 hover:cursor-pointer' onClick={() => setPage('contact')}>START YOUR OWN PROJECT</button>
                     </div>
                 </div>
             </div>

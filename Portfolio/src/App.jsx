@@ -16,7 +16,7 @@ function App() {
       
       <Navbar page={page} setPage={setPage} />
       {page === 'home' && <Landing page={page} setPage={setPage}/>}
-      {page === 'portfolio' && <Portfolio />}
+      {page === 'portfolio' && <Portfolio page={page} setPage={setPage}/>}
       {page === 'contact' && <Contact />}
       {page === 'about' && <About page={page} setPage={setPage}/>}
       <Footer/>
