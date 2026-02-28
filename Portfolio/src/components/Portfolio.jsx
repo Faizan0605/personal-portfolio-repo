@@ -3,11 +3,11 @@ import Sec2 from "./portfolio/Sec2";
 import Sec3 from "./portfolio/Sec3";
 
 function Portfolio({ page, setPage }) {
-    return ( <div>
-        <Sec1 page={page} setPage={setPage}/>
-        <Sec2/>
-        <Sec3/>
-    </div> );
+    return (<div>
+        <Sec1 />
+        <Sec2 />
+        <Sec3 />
+    </div>);
 }
 
 export default Portfolio;

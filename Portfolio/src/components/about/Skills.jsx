@@ -1,4 +1,6 @@
-function Skills({ page, setPage }) {
+import { Link } from 'react-router';
+
+function Skills() {
     const skills = [
         {
             title: "REACT JS",
@@ -49,9 +51,9 @@ function Skills({ page, setPage }) {
                                     WordPress platforms that align with diverse business needs.
                                 </p>
                                 <div className="flex justify-end lg:mb-20">
-                                    <button className="border-2 border-amber-300 text-amber-300 text-xs font-bold px-8 py-5 lg:mt-9 hover:cursor-pointer" onClick={() => setPage('portfolio')}>
-                                        FEATURED WORK
-                                    </button>
+                                    <Link to="/portfolio">
+                                        <button className="border-2 border-amber-300 text-amber-300 text-xs font-bold px-8 py-5 lg:mt-9 hover:cursor-pointer">FEATURED WORK</button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

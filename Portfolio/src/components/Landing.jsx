@@ -6,17 +6,17 @@ import Sec5 from "./landing/Sec5"
 import Sec6 from "./landing/Sec6"
 import Form from "./contact/Form"
 function Landing({ page, setPage }) {
-    return ( <div>
-        <Sec1 page={page} setPage={setPage}/>
-        <Sec2/>
-        <Sec3/>
-        <Sec4/>
-        <Sec5/>
-        <Sec6/>
-        
-        <Form/>
-        
-    </div> );
+    return (<div>
+        <Sec1 />
+        <Sec2 />
+        <Sec3 />
+        <Sec4 />
+        <Sec5 />
+        <Sec6 />
+
+        <Form />
+
+    </div>);
 }
 
 export default Landing;

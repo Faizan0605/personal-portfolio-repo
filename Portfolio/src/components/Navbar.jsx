@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
+import { Link, useLocation } from 'react-router';
 
 function Navbar({ page, setPage }) {
+    const location = useLocation();
 
     const [isSticky, setIsSticky] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
@@ -25,10 +27,38 @@ function Navbar({ page, setPage }) {
             <img src='/l.png' className={`ml-12 md:ml-15 transition-all duration-300 ${isSticky ? "h-14" : "h-20"}`}></img>
 
             <div className="hidden md:pr-15 md:flex justify-end gap-x-8 font-medium">
-                <span className="hover:text-zinc-600 hover:cursor-pointer"><p onClick={() => setPage('home')}>Home</p></span>
-                <span className="hover:text-zinc-600 hover:cursor-pointer"><p onClick={() => setPage('portfolio')}>Portfolio</p></span>
-                <span className="hover:text-zinc-600 hover:cursor-pointer"><p onClick={() => setPage('contact')}>Contact</p></span>
-                <span className="hover:text-zinc-600 hover:cursor-pointer"><p onClick={() => setPage('about')}>About</p></span>
+                <Link
+                    to="/"
+                    className={`hover:text-zinc-600 hover:cursor-pointer ${location.pathname === '/' ? 'text-blue-600 font-medium' : ''
+                        }`}
+                    onClick={() => setPage('home')}
+                >
+                    Home
+                </Link>
+                <Link
+                    to="/portfolio"
+                    className={`hover:text-zinc-600 hover:cursor-pointer ${location.pathname === '/portfolio' ? 'text-blue-600 font-medium' : ''
+                        }`}
+                    onClick={() => setPage('portfolio')}
+                >
+                    Portfolio
+                </Link>
+                <Link
+                    to="/contact"
+                    className={`hover:text-zinc-600 hover:cursor-pointer ${location.pathname === '/contact' ? 'text-blue-600 font-medium' : ''
+                        }`}
+                    onClick={() => setPage('contact')}
+                >
+                    Contact
+                </Link>
+                <Link
+                    to="/about"
+                    className={`hover:text-zinc-600 hover:cursor-pointer ${location.pathname === '/about' ? 'text-blue-600 font-medium' : ''
+                        }`}
+                    onClick={() => setPage('about')}
+                >
+                    About
+                </Link>
             </div>
 
 
@@ -66,29 +96,38 @@ function Navbar({ page, setPage }) {
             <div
                 className={`absolute top-full left-0 w-full bg-white flex flex-col items-center gap-4 py-6 shadow-md md:hidden z-50 transform transition-all duration-300 origin-top
                     ${menuOpen ? "scale-y-100 opacity-100" : "scale-y-0 opacity-0"}`}>
-                <span
+                <Link
+                    to="/"
+                    className={`hover:text-zinc-600 cursor-pointer ${location.pathname === '/' ? 'text-blue-600 font-medium' : ''
+                        }`}
                     onClick={() => { setPage("home"); setMenuOpen(false); }}
-                    className="hover:text-zinc-600 cursor-pointer">
+                >
                     Home
-                </span>
-                <span
+                </Link>
+                <Link
+                    to="/portfolio"
+                    className={`hover:text-zinc-600 cursor-pointer ${location.pathname === '/portfolio' ? 'text-blue-600 font-medium' : ''
+                        }`}
                     onClick={() => { setPage("portfolio"); setMenuOpen(false); }}
-                    className="hover:text-zinc-600 cursor-pointer"
                 >
                     Portfolio
-                </span>
-                <span
+                </Link>
+                <Link
+                    to="/contact"
+                    className={`hover:text-zinc-600 cursor-pointer ${location.pathname === '/contact' ? 'text-blue-600 font-medium' : ''
+                        }`}
                     onClick={() => { setPage("contact"); setMenuOpen(false); }}
-                    className="hover:text-zinc-600 cursor-pointer"
                 >
                     Contact
-                </span>
-                <span
+                </Link>
+                <Link
+                    to="/about"
+                    className={`hover:text-zinc-600 cursor-pointer ${location.pathname === '/about' ? 'text-blue-600 font-medium' : ''
+                        }`}
                     onClick={() => { setPage("about"); setMenuOpen(false); }}
-                    className="hover:text-zinc-600 cursor-pointer"
                 >
                     About
-                </span>
+                </Link>
             </div>
 
         </nav>

@@ -1,4 +1,6 @@
-function Hero({ page, setPage }) {
+import { Link } from 'react-router';
+
+function Hero() {
   return (
     <>
       <div className="bg-[url('/about/web-developer-25.webp')] bg-cover bg-center h-screen w-full flex justify-center items-center relative">
@@ -14,10 +16,10 @@ function Hero({ page, setPage }) {
             <h1 className="text-zinc-200 text-7xl font-bold">FULL STACK <br /> DEVELOPER</h1>
             <hr className="h-1 bg-white w-3/5 my-9"></hr>
             <p className="text-zinc-200 font-semibold text-lg ">I am a Full Stack Developer specializing in building efficient, scalable, and user-centric web applications by combining robust backend solutions with seamless frontend experiences.  </p>
-            
-            <button className="bg-amber-300 text-xs font-bold px-8 py-5 mt-9  transition-all duration-300 hover:scale-103 hover:cursor-pointer" onClick={() => setPage('contact')}>
-              HIRE ME!
-            </button>
+
+            <Link to="/contact">
+              <button className="bg-amber-300 text-xs font-bold px-8 py-5 mt-9  transition-all duration-300 hover:scale-103 hover:cursor-pointer">HIRE ME!</button>
+            </Link>
 
           </div>
         </div>
@@ -34,9 +36,9 @@ function Hero({ page, setPage }) {
             <h1 className="text-zinc-200 text-4xl font-bold">FULL STACK DEVELOPER</h1>
             <hr className="h-1 bg-zinc-200 w-3/5 my-9"></hr>
             <p className="text-zinc-200 font-semibold text-sm ">I am a Full Stack Developer specializing in building efficient, scalable, and user-centric web applications by combining robust backend solutions with seamless frontend experiences.  </p>
-            <button className="bg-amber-300 text-xs font-bold px-8 py-5 mt-9  transition-all duration-300 hover:scale-103 hover:cursor-pointer" onClick={() => setPage('contact')}>
-              HIRE ME!
-            </button>
+            <Link to="/contact">
+              <button className="bg-amber-300 text-xs font-bold px-8 py-5 mt-9  transition-all duration-300 hover:scale-103 hover:cursor-pointer">HIRE ME!</button>
+            </Link>
           </div>
         </div>
 
