@@ -3,14 +3,14 @@ import img2 from '../../assets1/web-developer-15.webp'
 import bookified from '../../project-images/bookified.png'
 import clomagin from '../../project-images/clomagin.png'
 import quyeto from '../../project-images/quyeto.png'
-import urlShortner from '../../project-images/url-shortner.png'
+import url from '../../project-images/url.png'
 
 const projects = [
     { img: quyeto, title: 'QUYETO DIGITAL', url: 'https://quyetodigital.com' },
     { img: img2, title: 'MERN CHAT', url: 'https://mern-chat-app-7inc.onrender.com/' },
     { img: clomagin, title: 'CLOMAGIN', url: 'https://cloudinary-powered-app.vercel.app/' },
     { img: bookified, title: 'BOOKIFIED', url: 'https://bookified-cyan.vercel.app/' },
-    { img: urlShortner, title: 'URL SHORTNER', url: 'https://url-shortner-74fh.onrender.com' },
+    { img: url, title: 'URL SHORTNER', url: 'https://url-shortner-74fh.onrender.com' },
     { img: img1, title: 'AI CHAT TOOL', url: 'https://bookified-cyan.vercel.app/' },
 ]
 
